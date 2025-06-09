@@ -1,4 +1,5 @@
 import streamlit as st
+import nltk
 from textblob import TextBlob
 import yfinance as yf
 import matplotlib.pyplot as plt
@@ -8,6 +9,26 @@ import requests
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import plotly.express as px
+
+import ssl
+
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
+
+@st.cache_data
+def download_nltk_data():
+    try:
+        nltk.download('punkt', quiet=True)
+        nltk.download('brown', quiet=True)
+        return True
+    except:
+        return False
+
+download_nltk_data()
 
 # Page config
 st.set_page_config(
