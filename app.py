@@ -343,3 +343,4 @@ st.markdown("""
 """)
 
 st.markdown("**Disclaimer:** This tool is for educational purposes only. Not financial advice.")
+st.markdown("© 2025 Arnav Pophale. All rights reserved.")
