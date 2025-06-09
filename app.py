@@ -8,10 +8,7 @@ import requests
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import plotly.express as px
-import os
 
-# Add this line
-os.system('python -m textblob.download_corpora')
 
 # Page config
 st.set_page_config(
