@@ -28,18 +28,18 @@ Features
 - Plotly
 - Matplotlib
 
-Project Motivation
+Project Motivation:
 This project was built to explore the intersection of natural language processing
 and financial markets, and to demonstrate the ability to build and deploy a
 data-driven application.
 
-Limitations & Future Improvements
+Limitations & Future Improvements:
 Uses a general-purpose sentiment model; finance-specific NLP models could improve accuracy
 Future versions may include live news ingestion and social media sentiment
 Potential expansion into predictive modeling and backtesting strategies
 
 
-Disclaimer
+Disclaimer:
 This project is for educational purposes only and does not constitute financial advice.
 
 ## Run Locally
